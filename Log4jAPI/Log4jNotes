@@ -1,0 +1,41 @@
+Logs: capture info/activities at the time of execution
+
+Types of logs:
+Info
+Warn
+Error
+Fatal
+
+How to generate logs : using Apache log4j API (Log4j JAR)
+
+
+How it works: It reads log4j configuration from log4j properties file.
+
+ 
+
+We need to create the log4j properties file under the resources folder.
+Create a source folder in your project(right click on project>>source folder)>>give name >> src/main/resources
+under this folder >> create a file >> name MUST BE log4j.properties
+copy the key value pair as written in log4j properties file
+
+
+JSON/XML --DATA COLLECTORS/standard language to communicate between 2 systems
+
+WebServices : these are API, But we do not download any JAR file..it happens over the network..through http protocol we send the request and then we get the response Over the network..
+imp : Authentication in form of Authentication token / Unique ID/Session ID
+
+SOAP API: gone from market
+Rest API: we use these API Now-a -days.. over the netwrok in form of http protocol>>webService
+
+API: PURE METHOD which is available in some system and in form of JAR file we use them >> some JAR files are open source>>you can modify  the source code and make your own version.. 
+WEbService: Soap based and Rest based
+soap based:simple object access protocol>>service interface
+rest API: REPRESENTATION STATEFUL API >>a pattern>>architecture type..it can use soap protocols..uses URLI
+
+
+
+
+
+
+
+LINUX >>Open source>> you can customize and create your own operating system..open source..but you cannot modify microsoft as they are licensed
