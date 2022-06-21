@@ -10,14 +10,14 @@ public class TestBase {
 	
 	public Properties prop;
 	public int Response_Status_Code_200 = 200;
-	
+	public int Response_Status_Code_201 = 201;
 	
 	public TestBase() throws IOException{
 		
 		prop = new Properties();
 		FileInputStream ip = new FileInputStream("C:\\Users\\admin\\eclipse\\APITesting\\src\\main\\java\\com\\api\\config\\config.properties");
 		prop.load(ip);
-		
+		 
 			
 	}
 	

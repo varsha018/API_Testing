@@ -1,0 +1,66 @@
+JSON: JAVA SCRIPT OBJECT NOTATION        >> Just like an object, available in raw form >>  key- value pair format
+
+
+TO TRANSFER information from 1 system to another >> from client to server communication
+
+simple json: 
+
+{
+empID: 1123,
+name: VARSHA,
+data: 34@21,
+}
+
+
+CLIENT   >>>>>        SERVER
+(JSON to Obj)	      (Obj to JSON)
+(Un-marshelling)      (Marshelling)
+
+
+object >> code written in JAVA, PERL, C# ,RUBY on server side >>> it converts that into JSON and sends it to Client
+
+on Client side >> JSON is converted back into object ie whatever format the client code is written(JAVA, PERL, C# ,RUBY )
+
+JAVA Obj >> JSON Obj
+JAVA collection(list,array,arraylist) converted into >> JSON Array
+
+
+
+To convert JSON to obj or obj to JSON, APIs are used:
+these APIs can be:
+Google GSON
+JackSon
+Simple JSON
+JSON SOUP
+
+
+typical JSON :
+
+{
+emp : "varsha",
+id : 1196598 ,
+mobile : [
+
+phone1 :987654321,
+phone2 :123456789,
+phone3 :654987092,
+
+]
+}
+
+
+Earlier transfer medium was HTML<<< But everything becme so complex,dynamic that HTML could not serve the purpose.
+Also, we have XML>> based on nodes, heavy weight 
+
+
+
+POJO >> Plain Old JAVA Object
+
+POJO >> JSON >>>MARSHELLING
+JSON >> POJO >>>UN-MARSHELLING
+
+..........................................
+
+
+
+
