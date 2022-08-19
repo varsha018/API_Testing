@@ -16,7 +16,7 @@ public class TestBase {
 		
 		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("C:\\Users\\admin\\workspace\\RestAPI\\src\\main\\java\\com\\qa\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("C:\\Users\\admin\\git\\API_Testing\\RestAPI\\API_Testing\\RestAPI\\src\\main\\java\\com\\qa\\config\\config.properties");
 			prop.load(ip);
 			
 		} catch (FileNotFoundException e) {
