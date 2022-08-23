@@ -4,13 +4,11 @@ import java.io.IOException;
 import java.util.HashMap;
 
 import org.apache.http.Header;
-import org.apache.http.ParseException;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -18,7 +16,9 @@ import com.qa.base.TestBase;
 import com.qa.client.RestClient;
 import com.qa.utils.TestUtil;
 
-public class GetAPITest extends TestBase {
+public class GetAPIwithHeaders extends TestBase {
+	
+	
 	
 	TestBase TBase; //create object of base class..
 	RestClient RClient;
@@ -43,10 +43,21 @@ public class GetAPITest extends TestBase {
 
 	@Test(priority=1)
 	
-	public void GetTestWithoutHeaders() throws ClientProtocolException, IOException {
+	public void GetTestWithHeaders() throws ClientProtocolException, IOException {
 		
 		RClient = new RestClient();
-		httpresponse = RClient.get(url);
+		
+		//create HashMap for Headers, only these lines headermap changes
+		
+		HashMap<String, String> HeaderMap =  new HashMap<String, String>();
+		
+		HeaderMap.put("Content-Type", "application/json");
+	//	HeaderMap.put("Host", "<calculated when request is sent>");
+	//	HeaderMap.put("User-Agent", "PostmanRuntime/7.29.2");
+		
+		System.out.println("Headers got inserted ");
+		
+		httpresponse = RClient.get(url, HeaderMap);
 		
 		int statuscode = httpresponse.getStatusLine().getStatusCode(); //4..get status code from status line from httpResponse
 		System.out.println("Status Code is ==> " + statuscode ); //5.print the status code
@@ -119,5 +130,8 @@ public class GetAPITest extends TestBase {
 		
 
 	
+
+
+
 
 }

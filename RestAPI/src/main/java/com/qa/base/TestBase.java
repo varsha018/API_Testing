@@ -9,6 +9,12 @@ public class TestBase {
 	
 	public Properties prop;
 	
+	public int response_status_code_200 = 200;
+	public int response_status_code_201 = 201;
+	public int response_status_code_400 = 400;
+	public int response_status_code_401 = 401;
+	
+	
 	
 	//create constructor of base class
 	
