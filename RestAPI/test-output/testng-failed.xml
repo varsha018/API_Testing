@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.tests.GetAPIwithHeaders">
+      <class name="com.qa.tests.POSTAPITest">
         <methods>
+          <include name="PostAPI"/>
           <include name="Setup"/>
-          <include name="GetTestWithoutHeaders"/>
         </methods>
-      </class> <!-- com.qa.tests.GetAPIwithHeaders -->
+      </class> <!-- com.qa.tests.POSTAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

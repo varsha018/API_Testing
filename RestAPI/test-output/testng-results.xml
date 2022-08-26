@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-23T23:47:00 IST" name="Default suite" finished-at="2022-08-23T23:47:00 IST" duration-ms="224">
+  <suite started-at="2022-08-26T20:22:06 IST" name="Default suite" finished-at="2022-08-26T20:22:07 IST" duration-ms="1265">
     <groups>
     </groups>
-    <test started-at="2022-08-23T23:47:00 IST" name="Default test" finished-at="2022-08-23T23:47:00 IST" duration-ms="224">
+    <test started-at="2022-08-26T20:22:06 IST" name="Default test" finished-at="2022-08-26T20:22:07 IST" duration-ms="1265">
       <class name="com.qa.tests.POSTAPITest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.qa.tests.POSTAPITest@c333c60]" started-at="2022-08-23T23:47:00 IST" name="Setup" finished-at="2022-08-23T23:47:00 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.qa.tests.POSTAPITest@c333c60]" started-at="2022-08-26T20:22:06 IST" name="Setup" finished-at="2022-08-26T20:22:06 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="PostAPI()[pri:0, instance:com.qa.tests.POSTAPITest@c333c60]" started-at="2022-08-23T23:47:00 IST" name="PostAPI" finished-at="2022-08-23T23:47:00 IST" duration-ms="188" status="PASS">
+        <test-method signature="PostAPI()[pri:0, instance:com.qa.tests.POSTAPITest@c333c60]" started-at="2022-08-26T20:22:06 IST" name="PostAPI" finished-at="2022-08-26T20:22:07 IST" duration-ms="1230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostAPI -->
